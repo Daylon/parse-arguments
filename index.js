@@ -1,5 +1,3 @@
-"use strict";
-
 const REGX = /^--([a-z0-9\-]+)=("?[a-z0-9\-]+"?)$/i;
 
 let ParseArguments = function () {
@@ -34,4 +32,4 @@ let ParseArguments = function () {
   return { infer, runtime, get };
 };
 
-module.exports = new ParseArguments();
+export default new ParseArguments();
